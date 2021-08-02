@@ -1,0 +1,28 @@
+﻿<Page x:Class="FakeStore.Pages.AddIventory"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FakeStore.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddIventory">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="6*" ></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Button x:Name="addInv" Click="addInv_Click" Grid.Row="0" FontSize="32" FontWeight="Bold" Background="Green">ADD</Button>
+        <StackPanel Grid.Row="1" Background="blue"></StackPanel>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Center">
+            <Label Margin="180,1,1,1" FontWeight="bold">ITEM:</Label>
+            <TextBox x:Name="item" Width="200" HorizontalAlignment="Center" VerticalAlignment="Center" Height="20"></TextBox>
+            <Label FontWeight="Bold">PRICE:</Label>
+            <TextBox x:Name="price" Width="100" Height="20" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBox>
+        </StackPanel>
+        <Button x:Name="back" Click="back_Click" Grid.Row="2" FontSize="32" FontWeight="Bold" Background="Red">GO BACK</Button>
+    </Grid>
+</Page>
